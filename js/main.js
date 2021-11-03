@@ -1,8 +1,12 @@
-function myFunction() {
-  let x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+let hamburger = document.getElementById("hamburger");
+hamburger.addEventListener("click", hamburgerToggle);
+
+function hamburgerToggle() {
+  let myLinks = document.getElementById("myLinks");
+
+  if (myLinks.style.display === "block") {
+    myLinks.style.display = "none";
   } else {
-    x.style.display = "block";
+    myLinks.style.display = "block";
   }
 }

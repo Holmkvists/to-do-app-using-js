@@ -11,21 +11,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <script src="js/main.js"></script>
   </head>
   <body>
     <header>
-      <div class="topnav">
-        <img id="logo" src="assets/planeramera.png" alt="logo" />
-        <div id="myLinks">
-          <a href="#currentplans">Se nuvarande planer</a>
-          <a href="#newplan">Skapa en ny plan</a>
-          <a href="#completedplans">Se slutförda planer</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+      <img id="logo" src="assets/planeramera.png" alt="logo" />
+      <a href="javascript:void(0);" id="hamburger">
+        <i class="fa fa-bars"></i>
+      </a>
+      <nav id="myLinks">
+        <a href="#currentplans">Se nuvarande planer</a>
+        <a href="#newplan">Skapa en ny plan</a>
+        <a href="#completedplans">Se slutförda planer</a>
+      </nav>
     </header>
+    <script src="js/main.js"></script>
   </body>
 </html>
