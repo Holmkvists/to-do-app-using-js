@@ -1,5 +1,7 @@
+html,
 body {
   margin: 0;
+  background-color: rgb(25, 88, 160);
 }
 
 header {
@@ -41,3 +43,109 @@ header {
     }
   }
 }
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+
+  .plansContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h3 {
+    width: 100%;
+    color: rgb(255, 242, 0);
+    text-align: center;
+  }
+
+  .thePlans {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    border: 8px solid rgb(255, 242, 0);
+    border-radius: 10px;
+    background-color: white;
+
+    .plansDescription {
+      display: flex;
+      justify-content: space-between;
+      height: 40px;
+      width: 90%;
+    }
+
+    .plansDescription :nth-child(3) {
+      text-align: center;
+    }
+
+    h4 {
+      width: 30%;
+    }
+  }
+
+  .listStyle {
+    width: 90%;
+    padding: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        width: 30%;
+      }
+
+      input {
+        width: 30%;
+      }
+    }
+  }
+
+  .inputContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    form {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border: 8px solid rgb(255, 242, 0);
+      border-radius: 10px;
+
+      #planInput {
+        width: 60%;
+      }
+
+      #planDeadline {
+        width: 30%;
+      }
+
+      #addButton {
+        width: 10%;
+      }
+    }
+  }
+}
+
+// NON-MOBILE 500px+
+
+// @media screen and (min-width: 500px) {
+//   header {
+//     #hamburger {
+//       display: none;
+//     }
+//     #myLinks {
+//       display: block;
+//     }
+//   }
+// }

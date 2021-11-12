@@ -24,6 +24,35 @@
         <a href="#completedplans">Se slutförda planer</a>
       </nav>
     </header>
+    <main>
+      <div class="container">
+        <section class="plansContainer">
+          <h3><a name="currentplans">Dina planer</a></h3>
+          <div class="thePlans">
+            <div class="plansDescription">
+              <h4>När</h4>
+              <h4>Vad</h4>
+              <h4>Klar?</h4>
+            </div>
+            <ul id="plansList" class="listStyle"></ul>
+          </div>
+        </section>
+        <section class="inputContainer">
+          <h3><a name="newplan">Skapa en plan</a></h3>
+          <form id="planForm">
+            <input type="date" id="planDeadline" required />
+            <input type="text" id="planInput" required />
+            <button id="addButton">+</button>
+          </form>
+        </section>
+        <section class="plansContainer">
+          <h3><a name="completedplans">Genomförda planer</a></h3>
+          <div class="thePlans">
+            <ul id="completedList" class="listStyle"></ul>
+          </div>
+        </section>
+      </div>
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>
