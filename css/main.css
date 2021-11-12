@@ -1,0 +1,116 @@
+html,
+body {
+  margin: 0;
+  background-color: #1958a0; }
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff200; }
+  header #logo {
+    width: 55%; }
+  header #hamburger {
+    display: block;
+    padding: 14px 16px;
+    font-size: 25px;
+    color: red; }
+  header #myLinks {
+    display: none;
+    width: 100%; }
+    header #myLinks a {
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      text-align: right;
+      font-size: 17px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      color: red; }
+    header #myLinks a:hover {
+      background-color: red;
+      color: #fff200; }
+
+main {
+  display: flex;
+  justify-content: center; }
+
+.container {
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif; }
+  .container .plansContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif; }
+  .container h3 {
+    width: 100%;
+    color: #fff200;
+    text-align: center; }
+  .container .thePlans {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    border: 8px solid #fff200;
+    border-radius: 10px;
+    background-color: white; }
+    .container .thePlans .plansDescription {
+      display: flex;
+      justify-content: space-between;
+      height: 40px;
+      width: 90%; }
+    .container .thePlans .plansDescription :nth-child(3) {
+      text-align: center; }
+    .container .thePlans h4 {
+      width: 30%; }
+  .container .listStyle {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+    gap: 15px; }
+    .container .listStyle li {
+      display: flex;
+      justify-content: space-between; }
+      .container .listStyle li span {
+        width: 30%; }
+      .container .listStyle li input {
+        width: 30%; }
+  .container .inputContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .container .inputContainer form {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border: 8px solid #fff200;
+      border-radius: 10px; }
+      .container .inputContainer form #planInput {
+        width: 60%; }
+      .container .inputContainer form #planDeadline {
+        width: 30%; }
+      .container .inputContainer form #addButton {
+        width: 10%; }
+
+@media screen and (min-width: 600px) {
+  header {
+    flex-wrap: nowrap;
+    flex-direction: column; }
+    header #logo {
+      width: 275px; }
+    header #hamburger {
+      display: none; }
+    header #myLinks {
+      display: block;
+      display: flex;
+      justify-content: space-evenly; }
+      header #myLinks a:hover {
+        background-color: #fff200;
+        color: red; }
+  main section {
+    gap: 15px;
+    margin-top: 15px; } }

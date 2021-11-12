@@ -1,0 +1,176 @@
+html,
+body {
+  margin: 0;
+  background-color: rgb(25, 88, 160);
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 242, 0);
+
+  #logo {
+    width: 55%;
+  }
+
+  #hamburger {
+    display: block;
+    padding: 14px 16px;
+    font-size: 25px;
+    color: red;
+  }
+
+  #myLinks {
+    display: none;
+    width: 100%;
+
+    a {
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      text-align: right;
+      font-size: 17px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      color: red;
+    }
+
+    a:hover {
+      background-color: red;
+      color: rgb(255, 242, 0);
+    }
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+
+  .plansContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h3 {
+    width: 100%;
+    color: rgb(255, 242, 0);
+    text-align: center;
+  }
+
+  .thePlans {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    border: 8px solid rgb(255, 242, 0);
+    border-radius: 10px;
+    background-color: white;
+
+    .plansDescription {
+      display: flex;
+      justify-content: space-between;
+      height: 40px;
+      width: 90%;
+    }
+
+    .plansDescription :nth-child(3) {
+      text-align: center;
+    }
+
+    h4 {
+      width: 30%;
+    }
+  }
+
+  .listStyle {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+    gap: 15px;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        width: 30%;
+      }
+
+      input {
+        width: 30%;
+      }
+    }
+  }
+
+  .inputContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    form {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border: 8px solid rgb(255, 242, 0);
+      border-radius: 10px;
+
+      #planInput {
+        width: 60%;
+      }
+
+      #planDeadline {
+        width: 30%;
+      }
+
+      #addButton {
+        width: 10%;
+      }
+    }
+  }
+}
+
+// LARGER DEVICES 600px +
+
+@media screen and (min-width: 600px) {
+  header {
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    #logo {
+      width: 275px;
+    }
+
+    #hamburger {
+      display: none;
+    }
+
+    #myLinks {
+      display: block;
+      display: flex;
+      justify-content: space-evenly;
+
+      a:hover {
+        background-color: rgb(255, 242, 0);
+        color: red;
+      }
+    }
+  }
+
+  main {
+    section {
+      gap: 15px;
+      margin-top: 15px;
+    }
+  }
+}
