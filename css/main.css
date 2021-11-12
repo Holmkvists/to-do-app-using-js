@@ -67,8 +67,11 @@ main {
     .container .thePlans h4 {
       width: 30%; }
   .container .listStyle {
+    display: flex;
+    flex-direction: column;
     width: 90%;
-    padding: 0; }
+    padding: 0;
+    gap: 15px; }
     .container .listStyle li {
       display: flex;
       justify-content: space-between; }
@@ -92,3 +95,22 @@ main {
         width: 30%; }
       .container .inputContainer form #addButton {
         width: 10%; }
+
+@media screen and (min-width: 600px) {
+  header {
+    flex-wrap: nowrap;
+    flex-direction: column; }
+    header #logo {
+      width: 275px; }
+    header #hamburger {
+      display: none; }
+    header #myLinks {
+      display: block;
+      display: flex;
+      justify-content: space-evenly; }
+      header #myLinks a:hover {
+        background-color: #fff200;
+        color: red; }
+  main section {
+    gap: 15px;
+    margin-top: 15px; } }
