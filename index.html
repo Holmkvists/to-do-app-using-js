@@ -27,28 +27,28 @@
     <main>
       <div class="container">
         <section class="plansContainer">
-          <h3>Dina planer</h3>
-          <div id="thePlans">
+          <h3><a name="currentplans">Dina planer</a></h3>
+          <div class="thePlans">
             <div class="plansDescription">
               <h4>När</h4>
               <h4>Vad</h4>
               <h4>Klar?</h4>
             </div>
-            <ul id="plansList"></ul>
+            <ul id="plansList" class="listStyle"></ul>
           </div>
         </section>
         <section class="inputContainer">
-          <h3>Skapa en plan</h3>
+          <h3><a name="newplan">Skapa en plan</a></h3>
           <form id="planForm">
             <input type="date" id="planDeadline" required />
             <input type="text" id="planInput" required />
             <button id="addButton">+</button>
           </form>
         </section>
-        <section class="completedContainer">
-          <h3>Genomförda planer</h3>
-          <div id="completedPlans">
-            <ul></ul>
+        <section class="plansContainer">
+          <h3><a name="completedplans">Genomförda planer</a></h3>
+          <div class="thePlans">
+            <ul id="completedList" class="listStyle"></ul>
           </div>
         </section>
       </div>

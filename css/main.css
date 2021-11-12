@@ -48,7 +48,7 @@ main {
     width: 100%;
     color: #fff200;
     text-align: center; }
-  .container #thePlans {
+  .container .thePlans {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -57,18 +57,25 @@ main {
     border: 8px solid #fff200;
     border-radius: 10px;
     background-color: white; }
-    .container #thePlans .plansDescription {
-      height: 40px;
-      width: 80%;
+    .container .thePlans .plansDescription {
       display: flex;
       justify-content: space-between;
+      height: 40px;
+      width: 90%; }
+    .container .thePlans .plansDescription :nth-child(3) {
       text-align: center; }
-    .container #thePlans #plansList {
-      width: 90%;
-      padding: 0; }
-      .container #thePlans #plansList li {
-        display: flex;
-        justify-content: space-between; }
+    .container .thePlans h4 {
+      width: 30%; }
+  .container .listStyle {
+    width: 90%;
+    padding: 0; }
+    .container .listStyle li {
+      display: flex;
+      justify-content: space-between; }
+      .container .listStyle li span {
+        width: 30%; }
+      .container .listStyle li input {
+        width: 30%; }
   .container .inputContainer {
     display: flex;
     flex-wrap: wrap;
@@ -85,12 +92,3 @@ main {
         width: 30%; }
       .container .inputContainer form #addButton {
         width: 10%; }
-  .container .completedContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .container .completedContainer #completedPlans {
-      width: 100%;
-      border: 8px solid #fff200;
-      border-radius: 10px;
-      background-color: white; }
