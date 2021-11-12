@@ -63,8 +63,8 @@ function updateList() {
     let planDate = document.createElement("span");
     planDate.innerHTML += toDo.date + "";
 
-    let planItem = document.createElement("span");
-    planItem.innerHTML += toDo.description + "";
+    let planDescription = document.createElement("span");
+    planDescription.innerHTML += toDo.description + "";
 
     let cb = document.createElement("input");
     cb.type = "checkbox";
@@ -76,7 +76,7 @@ function updateList() {
     else createdPlans.appendChild(planSummary);
 
     planSummary.appendChild(planDate);
-    planSummary.appendChild(planItem);
+    planSummary.appendChild(planDescription);
     planSummary.appendChild(cb);
   }
 }

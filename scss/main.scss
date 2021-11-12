@@ -93,8 +93,11 @@ main {
   }
 
   .listStyle {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     padding: 0;
+    gap: 15px;
 
     li {
       display: flex;
@@ -137,15 +140,37 @@ main {
   }
 }
 
-// NON-MOBILE 500px+
+// LARGER DEVICES 600px +
 
-// @media screen and (min-width: 500px) {
-//   header {
-//     #hamburger {
-//       display: none;
-//     }
-//     #myLinks {
-//       display: block;
-//     }
-//   }
-// }
+@media screen and (min-width: 600px) {
+  header {
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    #logo {
+      width: 275px;
+    }
+
+    #hamburger {
+      display: none;
+    }
+
+    #myLinks {
+      display: block;
+      display: flex;
+      justify-content: space-evenly;
+
+      a:hover {
+        background-color: rgb(255, 242, 0);
+        color: red;
+      }
+    }
+  }
+
+  main {
+    section {
+      gap: 15px;
+      margin-top: 15px;
+    }
+  }
+}
